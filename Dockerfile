@@ -34,7 +34,6 @@ ENV RUBY_GC_MALLOC_LIMIT 60000000
 ENV RUBY_FREE_MIN 200000
 ENV RUBY_HEAP_SLOTS_GROWTH_FACTOR 1.25
 
-WORKDIR /
-
 # Clean up APT when done.
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+WORKDIR /
